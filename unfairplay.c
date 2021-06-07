@@ -56,9 +56,7 @@ int copy(const char* src, const char* dest) {
     return result;
 }
 
-static int
-unprotect(int f, uint8_t *dupe, struct encryption_info_command_64 *info)
-{
+static int unprotect(int f, uint8_t *dupe, struct encryption_info_command_64 *info) {
     void *base = mmap(NULL, info->cryptsize, PROT_READ | PROT_EXEC, MAP_PRIVATE, f, info->cryptoff);
     if (base == MAP_FAILED) {
         perror("mmap");
@@ -80,9 +78,7 @@ unprotect(int f, uint8_t *dupe, struct encryption_info_command_64 *info)
     return 0;
 }
 
-static uint8_t*
-map(const char *path, bool mutable, size_t *size, int *descriptor)
-{
+static uint8_t* map(const char *path, bool mutable, size_t *size, int *descriptor) {
     int f = open(path, mutable ? O_RDWR : O_RDONLY);
     if (f < 0) {
         perror("open");
@@ -113,9 +109,7 @@ map(const char *path, bool mutable, size_t *size, int *descriptor)
     return base;
 }
 
-int
-main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]) {
     if (argc < 3) {
         printf("Usage: %s src dest\n", argv[0]);
         return 1;
