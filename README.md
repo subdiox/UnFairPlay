@@ -4,12 +4,13 @@
 - macOS 11.2.3 or below
 - SIP enabled
 
-## Build
+## Usage
+### Build
 ```
 $ gcc unfairplay.c -o unfairplay
 ```
 
-## Decrypt
+### Decrypt
 ```
 $ ./unfairplay src dest
 ```
