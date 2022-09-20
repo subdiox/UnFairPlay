@@ -13,10 +13,9 @@ $ gcc unfairplay.c -o unfairplay
 ```
 $ ./unfairplay src dest
 ```
-### Example
-```
-$ sudo ./unfairplay /Applications/HogeApp.app/Contents/MacOS/HogeApp ./HogeApp.decrypted
-```
+- Example: `sudo ./unfairplay /Applications/HogeApp.app/Contents/MacOS/HogeApp ./HogeApp.decrypted`
+
+(*) If the decryption fails, you may need to try again a few seconds after.
 
 ## Description
 
