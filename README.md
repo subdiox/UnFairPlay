@@ -4,6 +4,20 @@
 - macOS 11.2.3 or below
 - SIP enabled
 
+## Build
+```
+$ gcc unfairplay.c -o unfairplay
+```
+
+## Decrypt
+```
+$ ./unfairplay src dest
+```
+### Example
+```
+$ sudo ./unfairplay /Applications/HogeApp.app/Contents/MacOS/HogeApp ./HogeApp.decrypted
+```
+
 ## Description
 
 Decrypt FairPlay encrypted binaries on macOS when SIP-enabled.
