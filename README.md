@@ -26,4 +26,4 @@ By mapping an executable as r-x and then using mremap_encrypted on the encrypted
 
 This was discovered independently when analyzing kernel sources, but it appears that the technique was first introduced on iOS (but now works on macOS): https://github.com/JohnCoates/flexdecrypt
 
-Thanks to [apple-tools](https://github.com/meme/apple-tools).
+This code is re-write of foulplay in [apple-tools](https://github.com/meme/apple-tools). Thanks to [@meme](https://github.com/meme). 
